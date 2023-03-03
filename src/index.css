@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Quesha";
-  src: local("Quesha"), url("./assets/fonts/Quesha.ttf") format("ttf");
+  font-family: "quesha";
+  src: local("quesha"), url("./assets/fonts/Quesha.ttf") format("ttf");
 }
 body {
   margin: 0;

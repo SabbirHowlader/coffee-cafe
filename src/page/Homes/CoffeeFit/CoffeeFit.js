@@ -5,7 +5,7 @@ import day from '../../../assets/images/coffee fit/day.png'
 
 const CoffeeFit = () => {
     return (
-        <div className='lg:flex my-10'>
+        <div className='lg:flex mb-10'>
             <div className='w-full mx-auto'>
                 <img className='h-full w-full mx-auto' src={fit} alt="coffee fit" />
             </div>

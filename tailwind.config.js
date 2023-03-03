@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'realway': ['Raleway', 'sans-serif'],
-        'quesha': ['Quesha', 'sans-serif']
+        'realway': ['Raleway'],
+        'quesha': ['quesha']
       },
       colors: {
         'primary': '#1E1E1E',

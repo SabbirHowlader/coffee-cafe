@@ -7,7 +7,7 @@ const TopBanner = () => {
     <div class="lg:flex">
       <div className='bg-white text-black'>
         <img src={logo} alt="logo"/>
-        <div className='p-10 pt-32'>
+        <div className='p-10 pt-28'>
           <h1 className='font-quesha text-5xl'>Freshly Brewed Coffee</h1>
           <p class="py-6 font-realway">Everyday in Arabika is like the colourful seasons
             of Bangladesh. Arabika welcomes all its

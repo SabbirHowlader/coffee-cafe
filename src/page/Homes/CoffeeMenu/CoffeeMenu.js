@@ -40,7 +40,7 @@ const CoffeeMenu = () => {
             <div className="card shadow-xxl">
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center lg:p-10 gap-5 '>
                     {
-                        menuData.map(item => (<div className='p-10 grid justify-items-center w-64 mx-auto leading-10 rounded-lg' style={{ backgroundColor: '#0E0E0E' }} key={item.id}>
+                        menuData.map(item => (<div className='p-10 grid justify-items-center w-72 mx-auto leading-10 rounded-lg' style={{ backgroundColor: '#0E0E0E' }} key={item.id}>
                             <img className='mb-4 ' src={item.img} alt="menu" />
                             <h5 className='text-2xl font-quesha'>{item.title}</h5>
                             <p className='font-realway'>{item.amount}৳</p>

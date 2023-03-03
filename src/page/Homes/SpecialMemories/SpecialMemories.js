@@ -5,8 +5,8 @@ import memorise3 from '../../../assets/images/special memories/Rectangle 3790.pn
 
 const SpecialMemories = () => {
     return (
-        <div className='p-2 lg:p-10'>
-            <h2 className='text-4xl pb-10 '>We Are Open to Create Special Memories</h2>
+        <div className='p-5 lg:p-10'>
+            <h2 className='text-4xl pb-12 '>We Are Open to Create Special Memories</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  items-center mx-auto'>
                 {/* memories-01  */}
                 <div>
