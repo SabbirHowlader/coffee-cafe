@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo/coffee-beans 1.png'
+import { FaAlignJustify } from "react-icons/fa";
 
 
 const naviteamData1 = [
@@ -49,16 +50,16 @@ const naviteamData2 = [
     },
 ]
 const Navbar = () => {
+    const [open, setOpen] = useState(false)
     return (
         <header>
             <nav className='lg:flex justify-evenly items-center font-realway py-4 gap-4'>
-
-                <div className='dropdown'>
-                    <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <div className='lg:block'>
-                        <ul tabIndex={0} className='lg:flex gap-14 mx-4 lg:mx-0'>
+                <div>
+                    <div onClick={() =>setOpen(!open)} className='lg:block'>
+                        <div className='text-2xl absolate cursor-pointer lg:hidden ml-4'>
+                            <FaAlignJustify name={open ? 'close':'menu' }></FaAlignJustify>
+                        </div>
+                        <ul className={`lg:flex gap-14 mx-4 lg:mx-0 ease-in ${open? 'top-20-opacity': 'top-[-490px]'} `}>
                             {
                                 naviteamData1.map(item => (
                                     <li className='my-3 lg:my-0 hover:underline hover:underline-offset-8 decoration-secondary' key={item.id}>
@@ -73,7 +74,7 @@ const Navbar = () => {
                     <img className='bg-white h-16 w-16 rounded-full' src={logo} alt="logo" />
                 </div>
                 <div id='navbar-menu' className='lg:block'>
-                    <ul tabIndex={0} className='lg:flex gap-14 mx-4 lg:mx-0'>
+                    <ul className='lg:flex gap-14 mx-4 lg:mx-0'>
                         {
                             naviteamData2.map(item2 => (
                                 <li className='my-3 lg:my-0 hover:underline hover:underline-offset-8 decoration-secondary' key={item2.id}>
