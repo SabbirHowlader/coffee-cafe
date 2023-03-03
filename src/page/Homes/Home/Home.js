@@ -1,5 +1,6 @@
 import React from 'react';
 import CoffeeExperiences from '../CoffeeExperiences/CoffeeExperiences';
+import CoffeeFit from '../CoffeeFit/CoffeeFit';
 import CoffeeMenu from '../CoffeeMenu/CoffeeMenu';
 import PopularProduct from '../PopularProduct/PopularProduct';
 import SpecialMemories from '../SpecialMemories/SpecialMemories';
@@ -13,6 +14,7 @@ const Home = () => {
             <SpecialMemories></SpecialMemories>
             <CoffeeMenu></CoffeeMenu>
             <PopularProduct></PopularProduct>
+            <CoffeeFit></CoffeeFit>
         </div>
     );
 };
