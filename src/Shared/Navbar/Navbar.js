@@ -49,19 +49,16 @@ const naviteamData2 = [
     },
 ]
 const Navbar = () => {
-    const [nav, setNav] = useState(false)
-    const handleNavbar = () => {
-        setNav(!nav)
-    }
     return (
         <header>
             <nav className='lg:flex justify-evenly items-center font-realway py-4 gap-4'>
-                <label tabIndex={0} onClick={handleNavbar} className="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <div>
+
+                <div className='dropdown'>
+                    <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
                     <div className='lg:block'>
-                        <ul tabIndex={0} onClick={handleNavbar} className='lg:flex gap-14 mx-4 lg:mx-0'>
+                        <ul tabIndex={0} className='lg:flex gap-14 mx-4 lg:mx-0'>
                             {
                                 naviteamData1.map(item => (
                                     <li className='my-3 lg:my-0 hover:underline hover:underline-offset-8 decoration-secondary' key={item.id}>
@@ -76,7 +73,7 @@ const Navbar = () => {
                     <img className='bg-white h-16 w-16 rounded-full' src={logo} alt="logo" />
                 </div>
                 <div id='navbar-menu' className='lg:block'>
-                    <ul className='lg:flex gap-14 mx-4 lg:mx-0'>
+                    <ul tabIndex={0} className='lg:flex gap-14 mx-4 lg:mx-0'>
                         {
                             naviteamData2.map(item2 => (
                                 <li className='my-3 lg:my-0 hover:underline hover:underline-offset-8 decoration-secondary' key={item2.id}>
