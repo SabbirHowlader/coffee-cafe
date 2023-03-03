@@ -1,5 +1,5 @@
 import React from 'react';
-import coffee from '../../assets/images/coffee expeiences/coffee-experiences.png'
+import coffee from '../../../assets/images/coffee expeiences/coffee-experiences.png'
 
 const itemData1 = [
     {
